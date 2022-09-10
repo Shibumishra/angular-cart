@@ -1,0 +1,53 @@
+<section class="mt-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3" *ngFor="let item of datas">
+        <div class="card shadow-lg">
+          <img [src]="item.img" class="img-fluid" />
+          <div class="card-body">
+            <p class="h3">{{ item.name }}</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+              harum labore vitae culpa dolorum eius architecto sed tenetur fuga
+              dignissimos.
+            </p>
+            <p class="h3">{{ getDate() }}</p>
+            <p>{{ udpateTime() }}</p>
+            <button class="btn btn-danger btn-sm">Book Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 py-2">
+        <div class="card shadow-lg">
+          <div class="card-header bg-secondary text-white">
+            <p class="h4">Counter</p>
+          </div>
+          <div class="card-body">
+            <p class="h2 text-center">{{ count }}</p>
+            <button (click)="increment()" class="btn btn-success btn-sm">
+              Increment
+            </button>
+            <button (click)="dicrement()" class="btn btn-danger btn-sm">
+              Decrement
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 py-2">
+        <div class="card shadow-lg">
+          <div class="card-header bg-secondary text-white">
+            <p class="h4">Wish Message</p>
+          </div>
+          <div class="card-body">
+            <p class="h4 text-center">{{message}}</p>
+            <button class="btn btn-success btn-sm" (click)="updateGoodMong()" >Good Morning</button>
+            <button class="btn btn-warning btn-sm" (click)="updateGoodEven()" >Good Afternoon</button>
+            <button class="btn btn-danger btn-sm" (click)="updateGoodAft()" >Good Evening</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
