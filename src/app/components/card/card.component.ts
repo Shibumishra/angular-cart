@@ -40,23 +40,23 @@ export class CardComponent implements OnInit {
   public message:string = "Hello"
 
   constructor() {
-    this.udpateTime();
-    this.getDate();
+    // this.udpateTime();
+    // this.getDate();
   }
 
   ngOnInit(): void {}
 
   datas: Data[] = Datas;
 
-  public getDate():string{
-    return new Date().toLocaleString();
-  }
+  // public getDate():string{
+  //   return new Date().toLocaleString();
+  // }
 
-  public udpateTime():void{
-    setInterval(()=> {
-      this.time = new Date().toLocaleTimeString();
-    },  1000);
-  };
+  // public udpateTime():void{
+  //   setInterval(()=> {
+  //     this.time = new Date().toLocaleTimeString();
+  //   },  1000);
+  // };
 
 
   public count:number = 0;
@@ -67,16 +67,8 @@ export class CardComponent implements OnInit {
     this.count > 0 ? this.count=this.count - 1 : alert("Not a negative number dicrement")
   };
 
-  public updateGoodMong(){
-    this.message = "Good Morning!"
+  public updateMessage(msg:string){
+    this.message = msg;
   };
-
-
-  public updateGoodAft(){
-    this.message = "Good Afternoon!"
-  };
-
-  public updateGoodEven(){
-    this.message = "Good Evening!"
-  };
+  
 }

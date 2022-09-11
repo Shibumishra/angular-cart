@@ -12,6 +12,8 @@ import { ProductItemComponent } from './components/product-item/product-item.com
 import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component';
 import { ChangeUsernameComponent } from './components/change-username/change-username.component';
 import { SmsAppComponent } from './components/sms-app/sms-app.component';
+import { ThemeComponent } from './components/theme/theme.component';
+import { RegisterComponent } from './components/register/register.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { SmsAppComponent } from './components/sms-app/sms-app.component';
     ProductItemComponent,
     ShoppingCartComponent,
     ChangeUsernameComponent,
-    SmsAppComponent
+    SmsAppComponent,
+    ThemeComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

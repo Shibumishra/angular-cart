@@ -11,8 +11,8 @@
               harum labore vitae culpa dolorum eius architecto sed tenetur fuga
               dignissimos.
             </p>
-            <p class="h3">{{ getDate() }}</p>
-            <p>{{ udpateTime() }}</p>
+            <!-- <p class="h3">{{ getDate() }}</p>
+            <p>{{ udpateTime() }}</p> -->
             <button class="btn btn-danger btn-sm">Book Now</button>
           </div>
         </div>
@@ -42,9 +42,9 @@
           </div>
           <div class="card-body">
             <p class="h4 text-center">{{message}}</p>
-            <button class="btn btn-success btn-sm" (click)="updateGoodMong()" >Good Morning</button>
-            <button class="btn btn-warning btn-sm" (click)="updateGoodEven()" >Good Afternoon</button>
-            <button class="btn btn-danger btn-sm" (click)="updateGoodAft()" >Good Evening</button>
+            <button class="btn btn-success btn-sm" (click)="updateMessage('Good Morning!')" >Good Morning</button>
+            <button class="btn btn-warning btn-sm" (click)="updateMessage('Good Afternoon!')" >Good Afternoon</button>
+            <button class="btn btn-danger btn-sm" (click)="updateMessage('Good Evening!')" >Good Evening</button>
           </div>
         </div>
       </div>

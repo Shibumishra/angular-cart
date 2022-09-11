@@ -1,0 +1,39 @@
+<section>
+  <div class="container py-4">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card shadow-lg">
+          <div class="card-header" [class.bg-dark]="darkTheme" [class.text-white]="darkTheme">
+            <p class="h4">Theme Selector</p>
+            <div class="form-check form-switch">
+              <input
+                name="darkTheme"
+                [(ngModel)]="darkTheme"
+                type="checkbox"
+                class="form-check-input"
+                id="flexSwitchCheckDefult"
+              />
+              <label for="flexSwitchCheckDefult" class="form-check-label"
+                >Default switch checkbox input</label
+              >
+            </div>
+          </div>
+          <div class="card-body" [class.bg-dark]="darkTheme" [class.text-white]="darkTheme">
+            <img
+              src="https://www.travelandleisure.com/thmb/Olylzl0cReD6hco2rg3GT-oGy0o=/1000x1000/smart/filters:no_upscale()/eiffel-tower-paris-france-EIFFEL0217-6ccc3553e98946f18c893018d5b42bde.jpg"
+              alt=""
+              class="img-fluid"
+            />
+            <p class="h3 mt-2">Patis</p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla
+              sequi possimus enim quod delectus qui tenetur error temporibus cum
+              repellat aut, assumenda aspernatur veniam et deleniti accusantium
+              provident unde voluptas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
